@@ -31,3 +31,5 @@ echo "Reboot the machine:"
 echo
 echo "    sudo reboot"
 echo "===================================================="
+
+# TODO: also set rhel wallpapers?
