@@ -26,6 +26,8 @@ if [ -f /etc/dnf/dnf.conf ]; then
     echo "Backed up /etc/dnf/dnf.conf to /etc/dnf/dnf.conf.bak"
 fi
 
-sudo dnf config-manager --setopt main.max_parallel_downloads="${parallel}" \
-    --setopt main.defaultyes="${defaultyes}" --save
+sudo dnf config-manager setopt \
+    "main.max_parallel_downloads=${parallel}" \
+    "main.defaultyes=${defaultyes}"
+
 echo "Updated /etc/dnf/dnf.conf: max_parallel_downloads=${parallel}, defaultyes=${defaultyes}"
