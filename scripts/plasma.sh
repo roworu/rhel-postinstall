@@ -21,7 +21,8 @@ sudo dnf -y install \
     dolphin \
     gwenview \
     kwrite \
-    kde-gtk-config
+    kde-gtk-config \
+    kinfocenter 
 
 sudo systemctl enable plasmalogin.service
 sudo systemctl set-default graphical.target
