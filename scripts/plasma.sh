@@ -27,7 +27,7 @@ sudo dnf -y install \
 sudo systemctl enable plasmalogin.service
 sudo systemctl set-default graphical.target
 
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 kwriteconfig6 --file plasma-org.kde.plasma.desktop-appletsrc --group General --key Image "File:///usr/share/wallpapers/RHEL10_Isometric/"
 kwriteconfig6 --file kdeglobals --group KDE --key AutomaticLookAndFeel true
