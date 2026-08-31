@@ -27,4 +27,6 @@ sudo dnf -y install \
 sudo systemctl enable plasmalogin.service
 sudo systemctl set-default graphical.target
 
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
 echo "Plasma installation complete."
