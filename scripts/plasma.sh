@@ -34,4 +34,7 @@ sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flat
 kwriteconfig6 --file kdeglobals --group KDE --key AutomaticLookAndFeel true
 kwriteconfig6 --file kdeglobals --group KDE --key LookAndFeelPackage "org.kde.breeze.desktop"
 
+kwriteconfig6 --file discoverrc --group FlatpakSources --key Sources "flathub"
+kwriteconfig6 --file discoverrc --group ResourcesModel --key currentApplicationBackend "flatpak-backend"
+
 echo "Plasma installation complete."
