@@ -1,7 +1,8 @@
-# rhel10-postinstall
+# rhel-postinstall
 
-a set of postinstall scripts i use for my rhel 10 installations.
-please, review each script before using.
+a set of postinstall scripts i use for my rhel installations.
+
+**please, review each script before using!**
 
 you should use these for minimal installation.
 if you already have `workstation` edition installed - you could try to remove gnome related stuff using `remove_gnome.sh` script, and then proceed with plasma installation.
@@ -12,7 +13,7 @@ if you already have `workstation` edition installed - you could try to remove gn
 2) installs `nvidia-open` package
 
 ```bash
-curl -o- https://raw.githubusercontent.com/roworu/rhel10-postinstall/main/scripts/nvidia.sh | bash
+curl -o- https://raw.githubusercontent.com/roworu/rhel-postinstall/main/scripts/nvidia.sh | bash
 ```
 
 ### kde plasma
@@ -23,5 +24,5 @@ curl -o- https://raw.githubusercontent.com/roworu/rhel10-postinstall/main/script
 4) sets `graphical.target` for systemd
 
 ```bash
-curl -o- https://raw.githubusercontent.com/roworu/rhel10-postinstall/main/scripts/plasma.sh | bash
+curl -o- https://raw.githubusercontent.com/roworu/rhel-postinstall/main/scripts/plasma.sh | bash
 ```
