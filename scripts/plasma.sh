@@ -22,7 +22,8 @@ sudo dnf -y install \
     gwenview \
     kwrite \
     kde-gtk-config \
-    kinfocenter 
+    kinfocenter \
+    kscreen
 
 sudo systemctl enable plasmalogin.service
 sudo systemctl set-default graphical.target
