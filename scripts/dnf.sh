@@ -27,5 +27,5 @@ if [ -f /etc/dnf/dnf.conf ]; then
 fi
 
 sudo dnf config-manager --setopt main.max_parallel_downloads="${parallel}" \
-    --setopt main.defaultyes="${defaultyes}"
+    --setopt main.defaultyes="${defaultyes}" --save
 echo "Updated /etc/dnf/dnf.conf: max_parallel_downloads=${parallel}, defaultyes=${defaultyes}"
