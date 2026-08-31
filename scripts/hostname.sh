@@ -24,6 +24,4 @@ echo "$hostname" | sudo tee /etc/hostname > /dev/null
 
 echo "Hostname set to: $hostname"
 echo
-echo "Reboot the machine for it to take effect:"
-echo
-echo "    sudo reboot"
+echo "Reboot the machine for it to take effect"

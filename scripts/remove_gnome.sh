@@ -32,3 +32,5 @@ rm -rf ~/.cache/*
 rm -rf ~/.local/share/gnome-shell
 rm -rf ~/.local/share/nautilus
 rm -rf ~/.local/state/*
+
+echo "Gnome removal complete."

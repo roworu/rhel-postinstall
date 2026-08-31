@@ -2,11 +2,11 @@
 set -euo pipefail
 
 REPO="https://github.com/roworu/rhel-postinstall.git"
-TASK="${1:?usage: install.sh <task>  (nvidia | plasma | remove_gnome | dnf | hostname)}"
+TASK="${1:?usage: install.sh <task>  (nvidia | plasma | remove_gnome | dnf | hostname | docker)}"
 
 case "$TASK" in
-    nvidia|plasma|remove_gnome|dnf|hostname) ;;
-    *) echo "Unknown task: $TASK (expected: nvidia | plasma | remove_gnome | dnf | hostname)" >&2; exit 1 ;;
+    nvidia|plasma|remove_gnome|dnf|hostname|docker) ;;
+    *) echo "Unknown task: $TASK (expected: nvidia | plasma | remove_gnome | dnf | hostname | docker)" >&2; exit 1 ;;
 esac
 
 tmp="$(mktemp -d)"

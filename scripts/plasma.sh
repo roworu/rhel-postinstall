@@ -13,7 +13,6 @@ sudo subscription-manager repos \
 sudo dnf -y install \
     "https://dl.fedoraproject.org/pub/epel/epel-release-latest-${RHEL_VERSION}.noarch.rpm"
 
-echo "==> Installing KDE Plasma..."
 sudo dnf -y install \
     plasma-desktop \
     plasma-login-manager \
@@ -27,13 +26,4 @@ sudo dnf -y install \
 sudo systemctl enable plasmalogin.service
 sudo systemctl set-default graphical.target
 
-echo
-echo "===================================================="
 echo "Plasma installation complete."
-echo
-echo "Reboot the machine:"
-echo
-echo "    sudo reboot"
-echo "===================================================="
-
-# TODO: also set rhel wallpapers?

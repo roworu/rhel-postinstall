@@ -13,3 +13,8 @@ sudo dnf config-manager --add-repo \
     "https://developer.download.nvidia.com/compute/cuda/repos/rhel${RHEL_VERSION}/${ARCH}/cuda-rhel${RHEL_VERSION}.repo"
 
 sudo dnf install nvidia-open
+
+# TODO: add module to wait for kernel modules to build.
+# now if user will try to reboot until moudles built - it will crash
+
+echo "Nvidia installation complete."
